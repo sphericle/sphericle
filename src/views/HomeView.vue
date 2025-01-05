@@ -42,7 +42,11 @@
 
   .pfp {
     height:2in;
-    border-radius: 5%;
+    border-radius: 50%;
+    transition: border-radius 0.1s 
+  }
+  .pfp:hover {
+    border-radius: 10%
   }
   .intro-block {
     display: flex;
