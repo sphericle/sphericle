@@ -34,6 +34,5 @@
   .grid-item {
     padding: 20px;
     width: 0.5fr;
-    border: 1px solid #ccc;
   }
 </style>
