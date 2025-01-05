@@ -12,7 +12,7 @@ import { RouterLink, RouterView } from 'vue-router'
   <RouterView />
 </template>
 
-<style scoped>
+<style>
 
 .header {
   position: fixed;
@@ -28,6 +28,7 @@ import { RouterLink, RouterView } from 'vue-router'
   justify-content: center;
   align-items: center;
   gap: 2.5rem;
+  margin-bottom: 5rem;
 }
 
 
