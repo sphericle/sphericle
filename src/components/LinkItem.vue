@@ -18,14 +18,14 @@ defineProps({
 <template>
   <div class="placeholder-rectangle" @click="window.open(link, '_blank')">
       <img :src="img" alt="Image" class="image">
-      <h2>{{ name }}</h2>
+      <h2><a :href="link" target="_blank">{{ name }}</a></h2>
   </div>
 </template>
 
 <style scoped>
   .placeholder-rectangle {
     cursor: pointer;
-    width: fit-content;
+    width: 300px;
     height: 100px;
     background-color: var(--color-background-soft);
     color: var(--heading-color);
@@ -36,6 +36,12 @@ defineProps({
     height: 100%;
     padding: 2vw;
     transition: background-color 0.2s;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+  }
+  .placeholder-rectangle > h2 {
+    text-wrap: nowrap;
+    color: var(--heading-color) !important;
   }
   .placeholder-rectangle:hover {
     background-color: var(--color-background-mute);
@@ -46,13 +52,13 @@ defineProps({
     color: rgb(0, 107, 189);
   }
 
-  .placeholder-rectangle:hover > img {
-    transition: height 0.2s;
-    height: 5.5vw;
-  }
-
   .image {
     margin-right: 10px;
     height: 5vw;
+  }
+
+  .placeholder-rectangle:hover > img {
+    transition: height 0.2s;
+    height: 5.5vw;
   }
 </style>

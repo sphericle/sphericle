@@ -22,6 +22,8 @@
         <h2><a href="https://music.apple.com/us/playlist/main/pl.u-gxblko0tbgWgovA">Open in Apple Music</a></h2>
       </div>
     </div>
+
+    <h1><a href="https://www.albumoftheyear.org/user/sphericle/" target="_blank">Album of the Year account</a></h1>
     
     <p class="message">i'm not gay</p>
   </main>
@@ -30,6 +32,9 @@
 <style lang="css" scoped>
   main {
     padding-top: 1rem;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
   }
   
   .grid-container {
@@ -37,9 +42,6 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 10px;
-    align-items: center;
-    justify-items: center;
-    text-align: center;
   }
   .grid-item {
     padding: 40px;
@@ -52,9 +54,6 @@
 
   .message {
     padding: 3in;
-    align-items: center;
-    justify-items: center;
-    text-align: center;
   }
 
   .music-embed {
