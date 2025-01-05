@@ -30,7 +30,11 @@ import { RouterLink, RouterView } from 'vue-router'
   gap: 2.5rem;
   margin-bottom: 5rem;
 }
-
+.header > a {
+  border-radius: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
 
 .logo {
   display: block;

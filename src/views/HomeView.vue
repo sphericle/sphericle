@@ -13,6 +13,7 @@
     <div class="links">
       <h1 style="padding-bottom:1vw">Links</h1>
       <LinkItem name="Discord Server" img="https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/636e0a6a49cf127bf92de1e2_icon_clyde_blurple_RGB.png" link="https://discord.com/"></LinkItem>
+      <LinkItem name="Discord Server" img="https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/636e0a6a49cf127bf92de1e2_icon_clyde_blurple_RGB.png" link="https://discord.com/"></LinkItem>
     </div>
 
     
@@ -26,6 +27,11 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+  }
+
+  .links {
+    height: initial;
+    overflow: hidden;
   }
 
   main > * {
