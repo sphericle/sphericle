@@ -46,7 +46,7 @@
   }
 
   img {
-    height: 2in
+    height: 30vh
   }
 
 
