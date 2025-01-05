@@ -46,14 +46,27 @@
   }
 
   img {
-    height: 30vh
+    height: 30vw;
   }
-
 
   .message {
     padding: 1in;
     align-items: center;
     justify-items: center;
     text-align: center;
+  }
+
+  @media (max-width: 600px) {
+    .grid-container {
+      display: block;
+      overflow-y: auto;
+    }
+    .grid-item {
+      margin-bottom: 20px;
+    }
+    img {
+      height: auto;
+      width: 100%;
+    }
   }
 </style>
