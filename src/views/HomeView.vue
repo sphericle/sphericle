@@ -5,7 +5,7 @@ import LinkItem from "../components/LinkItem.vue";
 <template>
   <main>
     <div class="intro-block">
-      <img class="pfp" src="/src/assets/imgs/sphericle.png" />
+      <img class="pfp" src="/imgs/sphericle.png" />
       <h1>Sphericle</h1>
       <p>haiiiii</p>
     </div>
@@ -14,32 +14,32 @@ import LinkItem from "../components/LinkItem.vue";
     <div class="links">
       <LinkItem
         name="YouTube"
-        img="/src/assets/imgs/logos/youtube.png"
+        img="/imgs/logos/youtube.png"
         link="https://youtube.com/@zsphericle"
       ></LinkItem>
       <LinkItem
         name="Alt Channel"
-        img="/src/assets/imgs/logos/youtube.png"
+        img="/imgs/logos/youtube.png"
         link="https://youtube.com/@sphericalt"
       ></LinkItem>
       <LinkItem
         name="Server"
-        img="/src/assets/imgs/logos/discord.png"
+        img="/imgs/logos/discord.png"
         link="https://discord.gg/gGH4FNe4PK"
       ></LinkItem>
       <LinkItem
         name="Layout List"
-        img="/src/assets/imgs/logos/laylist.png"
+        img="/imgs/logos/laylist.png"
         link="https://laylist.pages.dev/"
       ></LinkItem>
       <LinkItem
         name="GitHub"
-        img="/src/assets/imgs/logos/github.png"
+        img="/imgs/logos/github.png"
         link="https://github.com/sphericle/"
       ></LinkItem>
       <LinkItem
         name="Twitch"
-        img="/src/assets/imgs/logos/twitch.png"
+        img="/imgs/logos/twitch.png"
         link="https://github.com/sphericle/"
       ></LinkItem>
     </div>
