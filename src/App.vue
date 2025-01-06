@@ -1,19 +1,18 @@
 <script setup>
-import { RouterLink, RouterView } from 'vue-router'
+import { RouterLink, RouterView } from "vue-router";
 </script>
 
 <template>
-     <div class="header">
-      <RouterLink to="/">Home</RouterLink>
-      <RouterLink to="/projects">Projects</RouterLink>
-      <RouterLink to="/music">Music Opinions</RouterLink>
-     </div>
+  <div class="header">
+    <RouterLink to="/">Home</RouterLink>
+    <RouterLink to="/projects">Projects</RouterLink>
+    <RouterLink to="/music">Music Opinions</RouterLink>
+  </div>
 
   <RouterView />
 </template>
 
 <style>
-
 .header {
   position: fixed;
   top: 0;

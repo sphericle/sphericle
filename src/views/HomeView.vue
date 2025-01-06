@@ -1,5 +1,5 @@
 <script setup>
-  import LinkItem from "../components/LinkItem.vue"
+import LinkItem from "../components/LinkItem.vue";
 </script>
 
 <template>
@@ -10,34 +10,58 @@
       <p>haiiiii</p>
     </div>
 
-    <h1 style="padding-bottom:1vw;padding-top:4vw">Links</h1>
+    <h1 style="padding-bottom: 1vw; padding-top: 4vw">Links</h1>
     <div class="links">
-      <LinkItem name="YouTube" img="/src/assets/imgs/logos/youtube.png" link="https://youtube.com/@zsphericle"></LinkItem>
-      <LinkItem name="Alt Channel" img="/src/assets/imgs/logos/youtube.png" link="https://youtube.com/@sphericalt"></LinkItem>
-      <LinkItem name="Server" img="/src/assets/imgs/logos/discord.png" link="https://discord.gg/gGH4FNe4PK"></LinkItem>
-      <LinkItem name="Layout List" img="/src/assets/imgs/logos/laylist.png" link="https://laylist.pages.dev/"></LinkItem>
-      <LinkItem name="GitHub" img="/src/assets/imgs/logos/github.png" link="https://github.com/sphericle/"></LinkItem>
-      <LinkItem name="Twitch" img="/src/assets/imgs/logos/twitch.png" link="https://github.com/sphericle/"></LinkItem>
+      <LinkItem
+        name="YouTube"
+        img="/src/assets/imgs/logos/youtube.png"
+        link="https://youtube.com/@zsphericle"
+      ></LinkItem>
+      <LinkItem
+        name="Alt Channel"
+        img="/src/assets/imgs/logos/youtube.png"
+        link="https://youtube.com/@sphericalt"
+      ></LinkItem>
+      <LinkItem
+        name="Server"
+        img="/src/assets/imgs/logos/discord.png"
+        link="https://discord.gg/gGH4FNe4PK"
+      ></LinkItem>
+      <LinkItem
+        name="Layout List"
+        img="/src/assets/imgs/logos/laylist.png"
+        link="https://laylist.pages.dev/"
+      ></LinkItem>
+      <LinkItem
+        name="GitHub"
+        img="/src/assets/imgs/logos/github.png"
+        link="https://github.com/sphericle/"
+      ></LinkItem>
+      <LinkItem
+        name="Twitch"
+        img="/src/assets/imgs/logos/twitch.png"
+        link="https://github.com/sphericle/"
+      ></LinkItem>
     </div>
   </main>
 </template>
 
 <style lang="css" scoped>
-  main {
-    padding-top: 10vh;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-  }
-  .pfp {
-    height:2in;
-    border-radius: 50%;
-  }
-  .intro-block {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-  }
+main {
+  padding-top: 10vh;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.pfp {
+  height: 2in;
+  border-radius: 50%;
+}
+.intro-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
 </style>
