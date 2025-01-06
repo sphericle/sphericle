@@ -12,8 +12,8 @@
 
     <div class="links">
       <h1>Links</h1>
-      <LinkItem name="YouTube" img="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_%282017%29.svg/512px-YouTube_full-color_icon_%282017%29.svg.png" link="https://youtube.com/@zsphericle"></LinkItem>
-      <LinkItem name="Discord Server" img="https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/636e0a6a49cf127bf92de1e2_icon_clyde_blurple_RGB.png" link="https://discord.com/"></LinkItem>
+      <LinkItem name="YouTube" img="/src/assets/imgs/logos/youtube.png" link="https://youtube.com/@zsphericle"></LinkItem>
+      <LinkItem name="Discord Server" img="/src/assets/imgs/logos/discord.png" link="https://discord.com/"></LinkItem>
     </div>
 
     
