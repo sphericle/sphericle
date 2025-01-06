@@ -16,14 +16,14 @@ defineProps({
 </script>
 
 <template>
-  <div class="placeholder-rectangle" @click="window.open(link, '_blank')">
+  <div class="link-box" @click="window.open(link, '_blank')">
       <img :src="img" alt="Image" class="image">
       <h2><a :href="link" target="_blank">{{ name }}</a></h2>
   </div>
 </template>
 
 <style scoped>
-  .placeholder-rectangle {
+  .link-box {
     cursor: pointer;
     width: 300px;
     height: 100px;
@@ -33,32 +33,32 @@ defineProps({
     display: flex; 
     align-items: center; 
     justify-content: center; 
-    height: 100%;
     padding: 2vw;
-    transition: background-color 0.2s;
-    margin-top: 5vh;
-    margin-bottom: 5vh;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+    transform-origin: center;
   }
-  .placeholder-rectangle > h2 {
-    text-wrap: nowrap;
-    color: var(--heading-color) !important;
-  }
-  .placeholder-rectangle:hover {
+  .link-box:hover {
+    transform: scale(1.05);
+    z-index: 2;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
     background-color: var(--color-background-mute);
   }
-
-  .placeholder-rectangle:hover > h2 {
+  .link-box > h2 {
+    text-wrap: nowrap;
+    color: var(--heading-color) !important;
+    position: relative; /* Ensure position is relative */
+  }
+  .link-box:hover > h2 {
     transition: color 0.2s;
     color: rgb(0, 107, 189);
   }
-
   .image {
     margin-right: 10px;
     height: 5vw;
+    transition: transform 0.2s ease;
+    position: relative; /* Ensure position is relative */
   }
-
-  .placeholder-rectangle:hover > img {
-    transition: height 0.2s;
-    height: 5.5vw;
+  .link-box:hover > .image {
+    transform: scale(1.1);
   }
 </style>

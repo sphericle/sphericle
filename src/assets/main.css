@@ -15,6 +15,14 @@ a,
   padding: 3px;
 }
 
+.links {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-top: 0px;
+  margin-bottom: 5vw
+}
+
 @media (hover: hover) {
   a:hover {
     background-color: hsla(227, 70%, 55%, 0.2);
