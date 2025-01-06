@@ -14,32 +14,32 @@ import LinkItem from "../components/LinkItem.vue";
     <div class="links">
       <LinkItem
         name="YouTube"
-        img="/imgs/logos/youtube.png"
+        img="youtube.png"
         link="https://youtube.com/@zsphericle"
       ></LinkItem>
       <LinkItem
         name="Alt Channel"
-        img="/imgs/logos/youtube.png"
+        img="youtube.png"
         link="https://youtube.com/@sphericalt"
       ></LinkItem>
       <LinkItem
         name="Server"
-        img="/imgs/logos/discord.png"
+        img="discord.png"
         link="https://discord.gg/gGH4FNe4PK"
       ></LinkItem>
       <LinkItem
         name="Layout List"
-        img="/imgs/logos/laylist.png"
+        img="laylist.png"
         link="https://laylist.pages.dev/"
       ></LinkItem>
       <LinkItem
         name="GitHub"
-        img="/imgs/logos/github.png"
+        img="github.png"
         link="https://github.com/sphericle/"
       ></LinkItem>
       <LinkItem
         name="Twitch"
-        img="/imgs/logos/twitch.png"
+        img="twitch.png"
         link="https://github.com/sphericle/"
       ></LinkItem>
     </div>

@@ -17,7 +17,7 @@ defineProps({
 
 <template>
   <div class="link-box" @click="window.open(link, '_blank')">
-    <img :src="img" alt="Image" class="image" />
+    <img :src="`/imgs/logos/${img}`" alt="Image" class="image" />
     <h2>
       <a :href="link" target="_blank">{{ name }}</a>
     </h2>
