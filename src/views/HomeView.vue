@@ -7,7 +7,7 @@ import LinkItem from "../components/LinkItem.vue";
     <div class="intro-block">
       <img class="pfp" src="/imgs/sphericle.png" />
       <h1>Sphericle</h1>
-      <p>haiiiii</p>
+      <p>professional idoit</p>
     </div>
 
     <h1 style="padding-bottom: 1vw; padding-top: 4vw">Links</h1>
