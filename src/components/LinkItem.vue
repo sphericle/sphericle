@@ -61,6 +61,8 @@ defineProps({
   height: 5vw;
   transition: transform 0.2s ease;
   position: relative; /* Ensure position is relative */
+  height: 60px;
+  width: auto;
 }
 .link-box:hover > .image {
   transform: scale(1.1);

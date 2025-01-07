@@ -64,4 +64,17 @@ main {
   justify-content: center;
   text-align: center;
 }
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+@media (max-width: 600px) {
+  .links {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
 </style>
