@@ -40,7 +40,7 @@ import LinkItem from "../components/LinkItem.vue";
       <LinkItem
         name="Twitch"
         img="twitch.png"
-        link="https://github.com/sphericle/"
+        link="https://twitch.tv/zsphericle/"
       ></LinkItem>
     </div>
   </main>
