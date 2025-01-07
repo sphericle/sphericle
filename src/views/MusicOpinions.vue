@@ -86,6 +86,7 @@ img {
 }
 
 .message {
+  text-wrap: nowrap; 
   padding: 3in;
 }
 
