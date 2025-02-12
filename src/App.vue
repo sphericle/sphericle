@@ -3,7 +3,6 @@
     <RouterLink to="/">Home</RouterLink>
     <!-- <RouterLink to="/projects">Projects</RouterLink> -->
     <RouterLink to="/music">Music Opinions</RouterLink>
-    <RouterLink to="/videoprogress">Video Progress</RouterLink>
     <RouterLink to="/stormingsummit">Storming Summit Progress</RouterLink>
   </div>
 
