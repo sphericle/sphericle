@@ -115,7 +115,7 @@ export default {
       <table>
         <thead>
           <tr>
-            <th class="grid-corner"></th>
+            <th :class="ssdata.length > 0 ? 'grid-corner' : ''"></th>
             <th>Date</th>
             <th>Attempts</th>
             <th>Playtime</th>
@@ -126,7 +126,10 @@ export default {
         </thead>
 
         <tbody>
-          <tr v-for="(entry, index) in ssdata" :key="index">
+          <tr v-if="ssdata.length == 0">
+            <td v-for="i in 7" :key="i">None</td>
+          </tr>
+          <tr v-else v-for="(entry, index) in ssdata" :key="index">
             <td>{{ index + 1 }}</td>
             <td>{{ entry.date }}</td>
             <td>{{ entry.attempts }}</td>
@@ -144,10 +147,11 @@ export default {
       <h2 v-if="ssdata.length > 5" @click="scrollToTop"><a>Jump to top</a></h2>
 
       <br />
-      <p class="grid-note">
+      <p class="grid-note" v-if="ssdata.length > 0">
         Note: this table only contains progress from after 2/9/25.
       </p>
-      <br />
+      <p v-else>Session table coming soon! I just need to.. play the level.</p>
+      <br>
     </div>
   </main>
 </template>
