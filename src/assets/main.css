@@ -6,13 +6,16 @@
   padding: 2rem;
   font-weight: normal;
 }
-
 a,
 .green {
   text-decoration: none;
   color: rgb(0, 107, 189);
   transition: 0.4s;
   padding: 3px;
+}
+
+a {
+  cursor: pointer;
 }
 
 .links {
