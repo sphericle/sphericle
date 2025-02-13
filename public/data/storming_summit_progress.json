@@ -1,3 +1,10 @@
 [
-    
+    {
+        "date": "2-12-25",
+        "attempts": 200,
+        "drop_attempts": 1,
+        "new_best": null,
+        "playtime": "30min",
+        "video": null
+    }
 ]
