@@ -123,7 +123,6 @@ export default {
       <table>
         <thead>
           <tr>
-            <th :class="ssdata.length > 0 ? 'grid-corner' : ''"></th>
             <th>Date</th>
             <th>Attempts</th>
             <th>Playtime</th>
@@ -138,7 +137,6 @@ export default {
             <td v-for="i in 7" :key="i">None</td>
           </tr>
           <tr v-else v-for="(entry, index) in ssdata" :key="index">
-            <td>{{ index + 1 }}</td>
             <td>{{ entry.date }}</td>
             <td>{{ entry.attempts }}</td>
             <td>{{ entry.playtime }}</td>
