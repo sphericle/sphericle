@@ -47,6 +47,14 @@ export default {
       }
       return `${days} days, ${diffHours} hours, ${diffMinutes} minutes, and ${diffSeconds} seconds`;
     },
+    totalAttempts() {
+      let atts = this.oldProgress.attempts;
+      for (const entry of this.ssdata) {
+        atts += entry.attempts;
+      }
+      
+      return atts.toLocaleString();
+    }
   },
   async mounted() {
     this.ssdata = await fetch("/data/storming_summit_progress.json").then(
@@ -92,7 +100,7 @@ export default {
           <a :href="greatestBest.video" target="_blank"
             >{{ greatestBest.percent }}%</a
           >
-          ({{ oldProgress.attempts.toLocaleString() }} attempts)
+          ({{ totalAttempts }} attempts)
         </h2>
       </div>
 
@@ -120,7 +128,7 @@ export default {
             <th>Attempts</th>
             <th>Playtime</th>
             <th>New best?</th>
-            <th>Drop attempts</th>
+            <th>Far attempts</th>
             <th>Video?</th>
           </tr>
         </thead>
@@ -148,9 +156,8 @@ export default {
 
       <br />
       <p class="grid-note" v-if="ssdata.length > 0">
-        Note: this table only contains progress from after 2/9/25.
+        Note: this table only contains progress from after 2/12/25.
       </p>
-      <p v-else>Session table coming soon! I just need to.. play the level.</p>
       <br>
     </div>
   </main>

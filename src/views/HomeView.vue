@@ -5,7 +5,7 @@ import LinkItem from "../components/LinkItem.vue";
 <template>
   <main>
     <div class="intro-block">
-      <img class="pfp" src="/imgs/sphericle.png" />
+      <img class="img-curved" src="/imgs/sphericle.png" />
       <h1>Sphericle</h1>
       <p>professional idoit</p>
     </div>
@@ -53,7 +53,7 @@ import LinkItem from "../components/LinkItem.vue";
     justify-content: center;
     text-align: center;
   }
-  .pfp {
+  .img-curved {
     height: 2in;
     border-radius: 50%;
   }
