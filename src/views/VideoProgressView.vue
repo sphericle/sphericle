@@ -3,15 +3,15 @@ export default {
   data() {
     return {
       statuses: {
-        Trimming: null,
-        Editing: null,
+        "Trimming": null,
+        "Editing": null,
         "Final touches": null,
-        Uploading: null,
-        Released: null,
+        "Uploading": null,
+        "Released": null,
       },
 
-      status: -1,
-      progress: 0,
+      status: 0,
+      progress: 15,
     };
   },
   methods: {
@@ -99,7 +99,6 @@ export default {
             </tr>
           </tbody>
         </table>
-
         
       </div>
       <br /><br /><br />
@@ -177,7 +176,8 @@ td {
   background-color: #ddd;
   border-radius: 5px;
   overflow: hidden;
-  width: 300px
+  width: 300px;
+  margin: 0 auto; /* Center the progress bar */
 }
 
 .besides-text {
