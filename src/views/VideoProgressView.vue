@@ -9,7 +9,7 @@ export default {
       */
       statuses: {
         "Trimming": "9 days, 12 hours",
-        "Editing": null,
+        "Editing": "7 hours",
         "Final touches": null,
         "Uploading": null,
       },
@@ -21,7 +21,7 @@ export default {
        * 3: uploading
        * 4: released
       */
-      status: 1,
+      status: 2,
       // changes the progress bar width next to the current status
       progress: 70,
       
