@@ -23,7 +23,7 @@ export default {
       */
       status: 1,
       // changes the progress bar width next to the current status
-      progress: 0,
+      progress: 65,
       
       // these times are in total minutes
       
@@ -32,7 +32,7 @@ export default {
       editedTime: 0, // amount of trimmed video edited
       runtime: "22min, 0s", // length of edited video
 
-      note: "pretty much done with trimming, although i want to shorten it a bit since its like 20 mins lol..."
+      note: "ts is FIRE"
     };
   },
   methods: {
