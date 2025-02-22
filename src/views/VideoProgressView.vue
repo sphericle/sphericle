@@ -11,7 +11,7 @@ export default {
       },
 
       status: 0,
-      progress: 15,
+      progress: 65,
     };
   },
   methods: {
