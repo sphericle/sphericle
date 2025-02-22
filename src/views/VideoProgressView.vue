@@ -23,13 +23,13 @@ export default {
       */
       status: 1,
       // changes the progress bar width next to the current status
-      progress: 65,
+      progress: 70,
       
       // these times are in total minutes
       
       cliptime: 73, // total recording length
       trimmedTime: 73, // total amount trimmed
-      editedTime: 0, // amount of trimmed video edited
+      editedTime: 48, // amount of trimmed video edited
       runtime: "22min, 0s", // length of edited video
 
       note: "ts is FIRE"
