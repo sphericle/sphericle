@@ -2,16 +2,37 @@
 export default {
   data() {
     return {
+      /*
+       * if not done with status, set to null
+       * else set to the time it took to complete status
+       * e.g. "x hours, y minutes"
+      */
       statuses: {
-        "Trimming": null,
+        "Trimming": "9 days, 12 hours",
         "Editing": null,
         "Final touches": null,
         "Uploading": null,
-        "Released": null,
       },
 
-      status: 0,
-      progress: 65,
+      /*
+       * 0: trimming
+       * 1: editing
+       * 2: final touches
+       * 3: uploading
+       * 4: released
+      */
+      status: 1,
+      // changes the progress bar width next to the current status
+      progress: 0,
+      
+      // these times are in total minutes
+      
+      cliptime: 73, // total recording length
+      trimmedTime: 73, // total amount trimmed
+      editedTime: 0, // amount of trimmed video edited
+      runtime: "22min, 0s", // length of edited video
+
+      note: "pretty much done with trimming, although i want to shorten it a bit since its like 20 mins lol..."
     };
   },
   methods: {
@@ -62,15 +83,24 @@ export default {
         <h1>No progress yet!</h1>
       </div>
       <div v-else>
-        <iframe
-          v-if="status == 5"
-          ref="latestVideo"
-          title="Latest Video"
-          :src="'http://www.youtube.com/embed/videoseries?list=UUP9rAStP33um-j-Zov89nyQ&feature=player_embedded&index=0&loop=1&origin=http://sphericle.pages.dev/{{ $route.path }}&fs=1&widget_referrer=http://sphericle.pages.dev/{{ $route.path }}'"
-          width="600"
-          height="340"
-        />
-        <h1 class="main-header">Status:</h1>
+        <div v-if="status == 4">
+          <h1>The video is out!</h1>
+          <iframe
+            ref="latestVideo"
+            title="Latest Video"
+            :src="'http://www.youtube.com/embed/videoseries?list=UUP9rAStP33um-j-Zov89nyQ&feature=player_embedded&index=0&loop=1&origin=http://sphericle.pages.dev/{{ $route.path }}&fs=1&widget_referrer=http://sphericle.pages.dev/{{ $route.path }}'"
+            width="600"
+            height="340"
+          />
+        </div>
+
+        <div v-else>
+          <h1 v-if="status == 0">Trimmed {{ Math.floor(trimmedTime / 60) }}h, {{  trimmedTime % 60 }}min of raw footage so far ({{ Math.round(trimmedTime / cliptime * 100) }}%)</h1>
+          <h1 v-else-if="status == 1">Edited {{ Math.floor(editedTime / 60) }}h, {{ editedTime % 60 }}min so far ({{ Math.round(editedTime / cliptime * 100) }}%)</h1>
+          <h1 v-if="status > 0">Runtime: {{ runtime }}</h1>
+          <br />
+          <h2 v-if="note" style="padding-bottom: 5%">Note: {{ note }}</h2>
+        </div>
 
         <table>
           <thead>
@@ -84,7 +114,7 @@ export default {
               <td>{{ subStatus }}</td>
               <td>
                 <img class="status-icon" v-if="i < status" src="/imgs/check.png" />
-                <span v-if="i < status && statuses[subStatus]">&nbsp;{{ statuses[subStatus] }}</span>
+                <span v-if="i < status && statuses[subStatus]">&nbsp;&nbsp;{{ statuses[subStatus] }}</span>
 
                 <div class="progress-bar" v-else-if="i == status" >
                   <div
@@ -117,7 +147,6 @@ export default {
     </div>
   </main>
 </template>
-
 <style lang="css" scoped>
 main {
   padding-top: 10vh;
@@ -127,7 +156,7 @@ main {
 }
 
 table {
-  width: 100%;
+  width: 650px; /* Fixed width for the table */
   margin: 0 auto;
   border-collapse: collapse;
   margin-top: 0.5rem;
