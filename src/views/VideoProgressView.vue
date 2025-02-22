@@ -97,6 +97,7 @@ export default {
         <div v-else>
           <h1 v-if="status == 0">Trimmed {{ Math.floor(trimmedTime / 60) }}h, {{  trimmedTime % 60 }}min of raw footage so far ({{ Math.round(trimmedTime / cliptime * 100) }}%)</h1>
           <h1 v-else-if="status == 1">Edited {{ Math.floor(editedTime / 60) }}h, {{ editedTime % 60 }}min so far ({{ Math.round(editedTime / cliptime * 100) }}%)</h1>
+          <h1 v-else-if="status > 1">Editing is done!</h1>
           <h1 v-if="status > 0">Runtime: {{ runtime }}</h1>
           <br />
           <h2 v-if="note" style="padding-bottom: 5%">Note: {{ note }}</h2>
@@ -116,6 +117,7 @@ export default {
                 <img class="status-icon" v-if="i < status" src="/imgs/check.png" />
                 <span v-if="i < status && statuses[subStatus]">&nbsp;&nbsp;{{ statuses[subStatus] }}</span>
 
+                <img v-else-if="status > 1 && i == status" src="/imgs/sleeping.jpeg" class="rotating img-curved"/>
                 <div class="progress-bar" v-else-if="i == status" >
                   <div
                     style="background-color: rgb(0, 170, 220); height: 24px;"
@@ -223,10 +225,28 @@ td {
 .status-icon {
   height: 1.5rem;
 }
+@-webkit-keyframes rotating {
+    from{
+        -webkit-transform: rotate(0deg);
+    }
+    to{
+        -webkit-transform: rotate(360deg);
+    }
+}
 
-.img-curved {
-  height: 2in;
-  border-radius: 50%;
+@keyframes rotating {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+.rotating {
+  height: 3rem;
+    -webkit-animation: rotating 2s linear infinite;
+    animation: rotating 2s linear infinite;
 }
 
 </style>

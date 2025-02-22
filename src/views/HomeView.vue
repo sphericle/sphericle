@@ -53,10 +53,6 @@ import LinkItem from "../components/LinkItem.vue";
     justify-content: center;
     text-align: center;
   }
-  .img-curved {
-    height: 2in;
-    border-radius: 50%;
-  }
   .intro-block {
     display: flex;
     flex-direction: column;

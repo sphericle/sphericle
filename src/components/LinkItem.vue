@@ -48,7 +48,6 @@ defineProps({
   background-color: var(--color-background-mute);
 }
 .link-box > h2 {
-  text-wrap: nowrap;
   color: var(--heading-color) !important;
   position: relative; /* Ensure position is relative */
 }
