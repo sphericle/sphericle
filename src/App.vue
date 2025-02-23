@@ -31,6 +31,8 @@
   border-radius: 10px;
   padding-left: 5px;
   padding-right: 5px;
+  white-space: nowrap;
+  font-size: 1.2rem;
 }
 
 .logo {
@@ -87,6 +89,15 @@ nav a:first-of-type {
 
     padding: 1rem 0;
     margin-top: 1rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .header {
+    gap: 1.5rem;
+  }
+  .header > a {
+    font-size: 0.9rem;
   }
 }
 </style>
