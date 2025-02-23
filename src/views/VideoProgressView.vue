@@ -10,8 +10,8 @@ export default {
       statuses: {
         "Trimming": "9 days, 12 hours",
         "Editing": "7 hours",
-        "Final touches": null,
-        "Uploading": null,
+        "Final touches": "2 hours",
+        "Uploading": "1 hour",
       },
 
       /*
@@ -21,7 +21,7 @@ export default {
        * 3: uploading
        * 4: released
       */
-      status: 2,
+      status: 4,
       // changes the progress bar width next to the current status
       progress: 70,
       
@@ -136,7 +136,7 @@ export default {
       <br /><br /><br />
 
       <!-- if the video is released -->
-      <div v-if="status !== 5">
+      <div v-if="status !== 4">
         <h2>Latest video:</h2>
         <iframe
           ref="latestVideo"
