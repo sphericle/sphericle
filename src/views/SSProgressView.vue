@@ -234,4 +234,13 @@ td {
 .grid-note {
   padding-bottom: 1rem;
 }
+
+@media (max-width: 1024px) {
+  th,
+  td {
+    padding: 4px;
+    font-size: 1rem;
+  }
+}
+
 </style>
