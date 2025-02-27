@@ -26,6 +26,18 @@
   align-items: center;
   gap: 2.5rem;
   margin-bottom: 5rem;
+  overflow-x: scroll;
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  scrollbar-width: none;  /* Firefox */
+}
+.header::-webkit-scrollbar {
+  display: none;  /* Safari and Chrome */
+}
+.header > *:first-child {
+  padding-left: 15px;
+}
+.header > *:last-child {
+  padding-right: 15px
 }
 .header > a {
   border-radius: 10px;
@@ -71,17 +83,14 @@ nav a:first-of-type {
     place-items: center;
     padding-right: calc(var(--section-gap) / 2);
   }
-
   .logo {
     margin: 0 2rem 0 0;
   }
-
   header .wrapper {
     display: flex;
     place-items: flex-start;
     flex-wrap: wrap;
   }
-
   nav {
     text-align: left;
     margin-left: -1rem;
@@ -97,7 +106,7 @@ nav a:first-of-type {
     gap: 1.5rem;
   }
   .header > a {
-    font-size: 0.9rem;
+    font-size: 65%;
   }
 }
 </style>
