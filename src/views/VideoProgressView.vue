@@ -8,10 +8,10 @@ export default {
        * e.g. "x hours, y minutes"
       */
       statuses: {
-        "Trimming": "9 days, 12 hours",
-        "Editing": "7 hours",
-        "Final touches": "2 hours",
-        "Uploading": "1 hour",
+        "Trimming": null,
+        "Editing": null,
+        "Final touches": null,
+        "Uploading": null,
       },
 
       /*
@@ -21,18 +21,18 @@ export default {
        * 3: uploading
        * 4: released
       */
-      status: 4,
+      status: 0,
       // changes the progress bar width next to the current status
       progress: 70,
       
       // these times are in total minutes
       
-      cliptime: 73, // total recording length
-      trimmedTime: 73, // total amount trimmed
-      editedTime: 48, // amount of trimmed video edited
-      runtime: "22min, 0s", // length of edited video
+      cliptime: 81, // total recording length
+      trimmedTime: 52, // total amount trimmed
+      editedTime: 0, // amount of trimmed video edited
+      runtime: "14min, 33s", // length of edited video
 
-      note: "ts is FIRE"
+      note: "im so npesta pilled in this recording IDK WHY?"
     };
   },
   methods: {
