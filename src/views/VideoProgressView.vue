@@ -8,7 +8,7 @@ export default {
        * e.g. "x hours, y minutes"
       */
       statuses: {
-        "Trimming": null,
+        "Trimming": "8 days",
         "Editing": null,
         "Final touches": null,
         "Uploading": null,
@@ -21,7 +21,7 @@ export default {
        * 3: uploading
        * 4: released
       */
-      status: 0,
+      status: 1,
       // changes the progress bar width next to the current status
       progress: 70,
       
@@ -30,9 +30,9 @@ export default {
       cliptime: 81, // total recording length
       trimmedTime: 52, // total amount trimmed
       editedTime: 0, // amount of trimmed video edited
-      runtime: "14min, 33s", // length of edited video
+      runtime: "16min, 11s", // length of edited video
 
-      note: "im so npesta pilled in this recording IDK WHY?"
+      note: "im so npesta pilled in this recording IDK WHY? also i thought this was gonna take forever to trim but turns out i do something completely different for half the recording so that's cool"
     };
   },
   methods: {
@@ -100,7 +100,7 @@ export default {
           <h1 v-else-if="status > 1">Editing is done!</h1>
           <h1 v-if="status > 0">Runtime: {{ runtime }}</h1>
           <br />
-          <h2 v-if="note" style="padding-bottom: 5%">Note: {{ note }}</h2>
+          <h2 v-if="note" class="video-note">Note: {{ note }}</h2>
         </div>
 
         <table>
@@ -224,6 +224,9 @@ td {
 }
 .status-icon {
   height: 1.5rem;
+}
+.video-note {
+  padding-bottom: 5%;
 }
 @-webkit-keyframes rotating {
     from{
