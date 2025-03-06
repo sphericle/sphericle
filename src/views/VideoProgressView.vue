@@ -23,14 +23,14 @@ export default {
       */
       status: 1,
       // changes the progress bar width next to the current status
-      progress: 70,
+      progress: 25,
       
       // these times are in total minutes
       
       cliptime: 81, // total recording length
       trimmedTime: 52, // total amount trimmed
-      editedTime: 0, // amount of trimmed video edited
-      runtime: "16min, 11s", // length of edited video
+      editedTime: 3, // amount of trimmed video edited
+      runtime: "15min, 46s", // length of edited video
 
       note: "im so npesta pilled in this recording IDK WHY? also i thought this was gonna take forever to trim but turns out i do something completely different for half the recording so that's cool"
     };
@@ -96,7 +96,7 @@ export default {
 
         <div v-else>
           <h1 v-if="status == 0">Trimmed {{ Math.floor(trimmedTime / 60) }}h, {{  trimmedTime % 60 }}min of raw footage so far ({{ Math.round(trimmedTime / cliptime * 100) }}%)</h1>
-          <h1 v-else-if="status == 1">Edited {{ Math.floor(editedTime / 60) }}h, {{ editedTime % 60 }}min so far ({{ Math.round(editedTime / cliptime * 100) }}%)</h1>
+          <h1 v-else-if="status == 1">Edited {{ editedTime % 60 }}min so far</h1>
           <h1 v-else-if="status > 1">Editing is done!</h1>
           <h1 v-if="status > 0">Runtime: {{ runtime }}</h1>
           <br />
