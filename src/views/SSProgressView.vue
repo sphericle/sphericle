@@ -43,7 +43,7 @@ export default {
       const years = Math.floor(diffDays / 365);
       const days = diffDays % 365;
       if (years !== 0) {
-        return `${years} years, ${days} days, ${diffHours} hours, ${diffMinutes} minutes, and ${diffSeconds} seconds`;
+        return `${years} year, ${days} days, ${diffHours} hours, ${diffMinutes} minutes, and ${diffSeconds} seconds`;
       }
       return `${days} days, ${diffHours} hours, ${diffMinutes} minutes, and ${diffSeconds} seconds`;
     },
