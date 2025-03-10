@@ -29,7 +29,7 @@ export default {
       
       cliptime: 81, // total recording length
       trimmedTime: 52, // total amount trimmed
-      editedTime: 3, // amount of trimmed video edited
+      editedTime: 5, // amount of trimmed video edited
       runtime: "15min, 46s", // length of edited video
 
       note: "im so npesta pilled in this recording IDK WHY? also i thought this was gonna take forever to trim but turns out i do something completely different for half the recording so that's cool"

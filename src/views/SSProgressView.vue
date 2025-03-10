@@ -119,44 +119,6 @@ export default {
         <a href="https://youtu.be/qK608YOhbxE" target="_blank">40%-100%</a>
       </h2>
       <br />
-
-      <table>
-        <thead>
-          <tr>
-            <th>Date</th>
-            <th>Attempts</th>
-            <th>Playtime</th>
-            <th>New best?</th>
-            <th>Far attempts</th>
-            <th>Video?</th>
-          </tr>
-        </thead>
-
-        <tbody>
-          <tr v-if="ssdata.length == 0">
-            <td v-for="i in 7" :key="i">None</td>
-          </tr>
-          <tr v-else v-for="(entry, index) in ssdata" :key="index">
-            <td>{{ entry.date }}</td>
-            <td>{{ entry.attempts }}</td>
-            <td>{{ entry.playtime }}</td>
-            <td>{{ !entry.new_best ? "None" : entry.new_best + "%" }}</td>
-            <td>{{ entry.drop_attempts }}</td>
-            <td v-if="entry.stream">
-              <a :href="entry.stream" target="_blank">Link</a>
-            </td>
-            <td v-else>None</td>
-          </tr>
-        </tbody>
-      </table>
-
-      <h2 v-if="ssdata.length > 5" @click="scrollToTop"><a>Jump to top</a></h2>
-
-      <br />
-      <p class="grid-note" v-if="ssdata.length > 0">
-        Note: this table only contains progress from after 2/12/25.
-      </p>
-      <br>
     </div>
   </main>
 </template>
