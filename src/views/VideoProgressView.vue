@@ -8,7 +8,7 @@ export default {
        * e.g. "x hours, y minutes"
       */
       statuses: {
-        "Trimming": "8 days",
+        "Trimming": "9 days",
         "Editing": null,
         "Final touches": null,
         "Uploading": null,
@@ -23,16 +23,16 @@ export default {
       */
       status: 1,
       // changes the progress bar width next to the current status
-      progress: 25,
+      progress: 80,
       
       // these times are in total minutes
       
-      cliptime: 81, // total recording length
-      trimmedTime: 52, // total amount trimmed
-      editedTime: 5, // amount of trimmed video edited
-      runtime: "15min, 46s", // length of edited video
+      cliptime: 41, // total recording length
+      trimmedTime: 41, // total amount trimmed
+      editedTime: 16, // amount of trimmed video edited
+      runtime: "20min, 11s", // length of edited video
 
-      note: "im so npesta pilled in this recording IDK WHY? also i thought this was gonna take forever to trim but turns out i do something completely different for half the recording so that's cool"
+      note: "premiere pro auto trim feature works AMAZINGLY!!!!"
     };
   },
   methods: {
