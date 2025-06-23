@@ -1,0 +1,33 @@
+{
+      /*
+       * if not done with status, set to null
+       * else set to the time it took to complete status
+       * e.g. "x hours, y minutes"
+      */
+      "statuses": {
+        "Trimming": "9 days",
+        "Editing": null,
+        "Final touches": null,
+        "Uploading": null
+      },
+
+      /*
+       * 0: trimming
+       * 1: editing
+       * 2: final touches
+       * 3: uploading
+       * 4: released
+      */
+      "status": 1,
+      // changes the progress bar width next to the current status
+      "progress": 80,
+      
+      // these times are in total minutes
+      
+      "cliptime": 41, // total recording length
+      "trimmedTime": 41, // total amount trimmed
+      "editedTime": 16, // amount of trimmed video edited
+      "runtime": "20min, 11s", // length of edited video
+      
+      "note": "premiere pro auto trim feature works AMAZINGLY!!!!"
+}

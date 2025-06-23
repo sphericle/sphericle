@@ -1,0 +1,19 @@
+{
+      "statuses": {
+        "Trimming": "2 days",
+        "Editing": "5 days",
+        "Final touches": null,
+        "Uploading": null
+      },
+
+      "status": 2,
+      "progress": 100,
+      
+      "cliptime": 41, 
+      "trimmedTime": 41, 
+      "editedTime": 16, 
+      "runtime": "9:51 (so far)",
+      "latestVideo": "https://www.youtube.com/embed/L6i3-rbyKFw",
+      
+      "note": "This video won't be as bad I promise"
+}

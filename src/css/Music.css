@@ -1,0 +1,32 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+}
+.grid-item {
+    padding: 40px;
+}
+.grid-item > img {
+    border-radius: 10px;
+    height: 27vw;
+}
+.music-message {
+    padding: 3in;
+}
+.music-embed {
+    background-color: var(--color-background-mute);
+}
+@media (max-width: 600px) {
+    .grid-container {
+        display: block;
+        overflow-y: auto;
+    }
+    .grid-item {
+        margin-bottom: 20px;
+    }
+    .grid-item > img {
+        height: auto;
+        width: 100%;
+    }
+}

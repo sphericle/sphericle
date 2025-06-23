@@ -1,0 +1,45 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.2);
+    padding: 0.4rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    overflow-x: scroll;
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.header::-webkit-scrollbar {
+    display: none;  /* Safari and Chrome */
+}
+
+.header > a {
+    border-radius: 12px;
+    padding: 0.5rem 1rem;
+    white-space: nowrap;
+    font-size: 1.2rem;
+    background-color: #007bff59; /* Button background color */
+    color: white; /* Text color */
+    text-decoration: none; /* Remove underline */
+    border: none; /* Remove default border */
+    display: inline-block;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    transition: filter 200ms ease;
+}
+
+.header > a:hover, .header > a.selected {
+    background-color: #0056b3; /* Darker shade on hover */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+.header > a:active {
+    transform: scale(0.95); /* Pressed effect */
+}
