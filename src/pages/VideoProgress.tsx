@@ -54,7 +54,7 @@ function VideoProgress() {
                     {data.status == 0 && <h1>Trimmed { Math.floor(data.trimmedTime / 60) }h, {data.trimmedTime % 60 }min of raw footage so far ({ Math.round(data.trimmedTime / data.cliptime * 100) }%)</h1> ||
                     data.status == 1 && <h1>Edited { data.editedTime % 60 }min so far</h1> ||
                     data.status > 1 && <h1>Editing is done!</h1>}
-                    {data.status > 0 && <h2 style={{"font-size": "2.5rem"}}>Runtime: {data.runtime}</h2>}
+                    {data.status > 0 && <h2 style={{fontSize: "2.5rem"}}>Runtime: {data.runtime}</h2>}
                     <br />
                     {data.note && <h2 className="video-note">Note: {data.note}</h2>}
                 </>}
