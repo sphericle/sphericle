@@ -1,5 +1,6 @@
 import "../css/VideoProgress.css"
 import { useEffect, useState } from 'react';
+import LinkItem from "../components/LinkItem";
 
 interface Statuses {
     "Trimming": string,
@@ -102,6 +103,19 @@ function VideoProgress() {
                     />
                 </>}
             </>}
+
+            <div className="links">
+                <LinkItem 
+                    name="Main Channel"
+                    img="youtube.png"
+                    link="https://youtube.com/@zsphericle"
+                />
+                <LinkItem
+                    name="Alt Channel"
+                    img="youtube.png"
+                    link="https://youtube.com/@sphericalt"
+                />
+            </div>
         </>
     )
 }
