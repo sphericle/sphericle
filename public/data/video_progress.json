@@ -2,17 +2,17 @@
       "statuses": {
         "Trimming": "2 days",
         "Editing": "5 days",
-        "Final touches": null,
+        "Final touches": "3 days (lol),
         "Uploading": null
       },
 
-      "status": 2,
+      "status": 3,
       "progress": 100,
       
       "cliptime": 41, 
       "trimmedTime": 41, 
       "editedTime": 16, 
-      "runtime": "9:51 (so far)",
+      "runtime": "13:10",
       "latestVideo": "https://www.youtube.com/embed/L6i3-rbyKFw",
       
       "note": "This video won't be as bad I promise"
