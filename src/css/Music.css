@@ -5,28 +5,31 @@
     gap: 10px;
 }
 .grid-item {
-    padding: 40px;
+    padding: 6vw;
 }
 .grid-item > img {
     border-radius: 10px;
-    height: 27vw;
+    height: 60vh;
 }
 .music-message {
     padding: 3in;
+    text-wrap: nowrap;
 }
 .music-embed {
     background-color: var(--color-background-mute);
 }
-@media (max-width: 600px) {
+@media (max-width: 800px) {
     .grid-container {
         display: block;
         overflow-y: auto;
     }
     .grid-item {
         margin-bottom: 20px;
+        padding: unset;
     }
     .grid-item > img {
-        height: auto;
         width: 100%;
+        height: 40vh; /* Reduced height */
+        width: 40vh
     }
 }
