@@ -12,13 +12,13 @@
     gap: 1rem;
     margin-bottom: 1rem;
     overflow-x: scroll;
-    -ms-overflow-style: none;  /* Internet Explorer 10+ */
-    scrollbar-width: none;  /* Firefox */
+    -ms-overflow-style: none;  
+    scrollbar-width: none;  
     backdrop-filter: blur(3px);
 }
 
 .header::-webkit-scrollbar {
-    display: none;  /* Safari and Chrome */
+    display: none;  
 }
 
 .header > a {
@@ -26,10 +26,10 @@
     padding: 0.5rem 1rem;
     white-space: nowrap;
     font-size: 1.2rem;
-    background-color: #007bff59; /* Button background color */
-    color: white; /* Text color */
-    text-decoration: none; /* Remove underline */
-    border: none; /* Remove default border */
+    background-color: #007bff59; 
+    color: white; 
+    text-decoration: none; 
+    border: none;
     display: inline-block;
     text-align: center;
     transition: background-color 0.3s ease, transform 0.2s ease;
@@ -37,10 +37,10 @@
 }
 
 .header > a:hover, .header > a.selected {
-    background-color: #0056b3; /* Darker shade on hover */
-    transform: scale(1.05); /* Slight zoom effect */
+    background-color: #0056b3; 
+    transform: scale(1.05); 
 }
 
 .header > a:active {
-    transform: scale(0.95); /* Pressed effect */
+    transform: scale(0.95); 
 }
