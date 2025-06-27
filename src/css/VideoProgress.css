@@ -1,5 +1,5 @@
 .video-table {
-    width: 650px; /* Fixed width for the table */
+    width: 650px; 
     margin: 0 auto;
     border-collapse: collapse;
     margin-top: 0.5rem;
@@ -49,7 +49,7 @@ td {
   border-radius: 5px;
   overflow: hidden;
   width: 300px;
-  margin: 0 auto; /* Center the progress bar */
+  margin: 0 auto; 
 }
 
 .besides-text {

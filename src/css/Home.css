@@ -76,7 +76,7 @@
   height: 5vw;
   transition: transform 0.2s ease;
   transition: filter 200ms ease;
-  position: relative; /* Ensure position is relative */
+  position: relative; 
   height: 60px;
   width: auto;
   will-change: filter;
